@@ -5,7 +5,7 @@ from tkinter import font
 HEIGHT = 500
 WIDTH = 600
 # api.openweathermap.org/data/2.5/weather?q={city name},{state code}&appid={API key}
-# e7eeee39bcb9c72b7fc40936b9053734
+# #SECRET TOKEN
 def format_response(weather):
 	try:
 		name = weather['name']
