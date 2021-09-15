@@ -7,7 +7,7 @@ def twitter_auth():
         secret_key = '#SECRET KEY'
     #bearer_token = 'AAAAAAAAAAAAAAAAAAAAAKKPPQEAAAAAebU80OjXhKdNae4QOwem5bbdxX0%3DXfFI2a6P7CpbeOlfs3qLkzD00rzJ9aOYOvGfBhKSCWRv112yAs'
         access_token = '343351837-RDEgyiJZnW1RmkzrJB7TAhUs2iI6eBd7APG18COc'
-        token_secret = 'cXc2RCv7pzpvhOjrTOZyjDG3kCeLbgaK62iwuPpSsInhv'
+        token_secret = '#secret token'
     except KeyError:
         sys.stderr.write("TWIITER_* environment variables not set\n")
         sys.exit(1)
