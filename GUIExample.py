@@ -1,0 +1,43 @@
+import tkinter
+from tkinter import Menu
+from tkinter import ttk
+import tkinter.messagebox
+import time
+window = tkinter.Tk()
+window.title("My First GUI")
+window.geometry("420x420")
+label = tkinter.Label(window, text="Hello", font=("Arial Bold", 14))
+label.grid(row=0,column=0)
+def clicked():
+    label.configure(text="Button clicked!")
+    res = "Welcome " + entry_box.get()
+    label.configure(text= res)
+button = tkinter.Button(window, text="Click Here", command=clicked)
+button.grid(row=0,column=1)
+entry_box = tkinter.Entry(window, width=10)
+entry_box.grid(row=1,column=0)
+entry_box.focus()
+check_state = tkinter.BooleanVar()
+check_state.set(True)
+check_button = tkinter.Checkbutton(window , text="choose", var=check_state)
+check_button.grid(row=2,column=0)
+radio_button = tkinter.Radiobutton(window, text="First", value=1, command=clicked)
+radio_button2 = tkinter.Radiobutton(window, text="Second", value=2, command=clicked)
+radio_button.grid(row=3,column=0)
+radio_button2.grid(row=3,column=1)
+menubar = Menu(window)
+window.config(menu=menubar)
+file_menu = Menu(menubar)
+file_menu.add_command(label='Exit', command=window.destroy)
+menubar.add_cascade(label='File', menu=file_menu)
+progress = ttk.Progressbar(window, orient='horizontal', mode='determinate', length=300)
+progress.grid(row=4,column=0,columnspan=2, padx=10, pady=20)
+start_button = ttk.Button(window,text='Start',command=progress.start)
+start_button.grid(row=5,column=0,padx=10,pady=10,)
+stop_button = ttk.Button(window,text='Stop',command=progress.stop)
+stop_button.grid(row=5,column=1,padx=10,pady=10)
+message_box = tkinter.messagebox.showinfo("Welcome to the message box")
+answer = tkinter.messagebox.askquestion("question 1", "do you like cheese")
+if answer == 'yes':
+    print("Yayy!")
+window.mainloop()
