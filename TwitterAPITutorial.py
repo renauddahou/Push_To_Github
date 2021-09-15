@@ -4,7 +4,7 @@ import sys
 def twitter_auth():
     try:
         api_key = 'tx75v4aD7qk81A5rfiITGWhRm'
-        secret_key = 'mJ3OJ7YG36XmX7Twk06yMv8XcoG6PkAf2DNW2pusIofbJdrm8a'
+        secret_key = '#SECRET KEY'
     #bearer_token = 'AAAAAAAAAAAAAAAAAAAAAKKPPQEAAAAAebU80OjXhKdNae4QOwem5bbdxX0%3DXfFI2a6P7CpbeOlfs3qLkzD00rzJ9aOYOvGfBhKSCWRv112yAs'
         access_token = '343351837-RDEgyiJZnW1RmkzrJB7TAhUs2iI6eBd7APG18COc'
         token_secret = 'cXc2RCv7pzpvhOjrTOZyjDG3kCeLbgaK62iwuPpSsInhv'
