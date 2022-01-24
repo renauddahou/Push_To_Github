@@ -4,7 +4,7 @@ import time
 from tweepy.error import TweepError
 consumer_key = 'tx75v4aD7qk81A5rfiITGWhRm'
 secret_key = '#SECRET KEY'
-access_token = "343351837-RDEgyiJZnW1RmkzrJB7TAhUs2iI6eBd7APG18COc"
+access_token = "#Access Token"
 token_secret = "#SECRET TOKEN"
 auth = tweepy.OAuthHandler(consumer_key, secret_key)
 auth.set_access_token(access_token, token_secret)
